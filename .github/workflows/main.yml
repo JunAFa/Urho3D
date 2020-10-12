@@ -79,8 +79,6 @@ jobs:
         with:
           path: |
             build/cache/.ccache
-            build/cache/.gradle/caches
-            build/cache/.gradle/wrapper
           key: |
             ${{ matrix.platform }}-${{ matrix.lib-type }}-${{ matrix.architecture }}-${{ matrix.build-type }}-${{ env.DBE_TAG }}-${{ steps.source_checksum.outputs.hexdigest }}
           restore-keys: |
